@@ -23,7 +23,7 @@ WORKDIR /openedx/account/
 RUN cd /openedx/account
 
 ## Installing and building app
-RUN npm install && npm run build 
+RUN npm install
 
 EXPOSE 1997 
 
