@@ -7,10 +7,26 @@ HERE = os.path.abspath(os.path.dirname(__file__))
 
 templates = os.path.join(HERE, "templates")
 
-config = {}
+config = {
+    "add": {
+        
+        "OAUTH2_SECRET": "{{ 24|random_string }}",
+    },
 
-hooks = {}
+    "defaults": {
+        "HOST": "{{ LMS_HOST }}:1997",
+        "DOCKER_REGISTRY": "{{ DOCKER_REGISTRY }}",
+        "DOCKER_IMAGE": "muratp/account",
+          }
+}
 
+hooks = {
+
+    "init": ["lms","account"],
+    "build-image": {"account": "muratp/account"},
+    "remote-image": {"account": "muratp/account"},
+   
+}
 
 def patches():
     all_patches = {}

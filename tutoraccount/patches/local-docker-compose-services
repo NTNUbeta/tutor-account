@@ -1,0 +1,16 @@
+############# account plugin
+
+account:
+  image: {{ DOCKER_REGISTRY }}{{ ACCOUNT_DOCKER_IMAGE }}
+
+  environment:
+    - NODE_ENV='development'      
+    
+  command:  ["npm", "run", "start", "--progress","--disable-host-check"]
+  ports:
+    - "1997:1997"
+      
+  restart: unless-stopped
+  depends_on:
+    - lms
+  

@@ -1,0 +1,8 @@
+account-job:
+  image: {{ DOCKER_REGISTRY }}muratp/account
+  volumes:
+    - ../plugins/account/apps/settings/tutor.py:/openedx/account/account/tutor.py
+  environment:
+    DJANGO_SETTINGS_MODULE: ${EDX_PLATFORM_SETTINGS:-tutor.production}
+  depends_on:
+    - lms

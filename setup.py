@@ -18,10 +18,10 @@ with io.open(
 setup(
     name="tutor-account",
     version=about["__version__"],
-    url="https://github.com/myusername/tutor-account",
+    url="https://github.com/murat-polat/tutor-account",
     project_urls={
-        "Code": "https://github.com/myusername/tutor-account",
-        "Issue tracker": "https://github.com/myusername/tutor-account/issues",
+        "Code": "https://github.com/murat-polat/tutor-account",
+        "Issue tracker": "https://github.com/murat-polat/tutor-account/issues",
     },
     license="AGPLv3",
     author="MP",
