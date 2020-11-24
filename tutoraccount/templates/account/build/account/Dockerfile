@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM debian
 
 LABEL MAINTAINER=MP
 RUN apt-get update && apt-get -y upgrade
@@ -10,7 +10,7 @@ RUN apt-get -y install python3-pip  git curl
 RUN pip3 install mysqlclient
 
 # Installing node and React dependencies
-RUN apt-get -y install node-gyp nodejs-dev libssl1.0-dev npm && npm install npm@latest -g
+RUN apt-get -y install node-gyp nodejs npm && npm install npm@latest -g
 
 # Making directory
 RUN  mkdir /openedx /openedx/data
@@ -23,7 +23,7 @@ WORKDIR /openedx/account/
 RUN cd /openedx/account
 
 ## Installing and building app
-RUN npm install
+RUN npm install 
 
 EXPOSE 1997 
 
