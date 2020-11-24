@@ -16,7 +16,7 @@ RUN apt-get -y install node-gyp nodejs npm && npm install npm@latest -g
 RUN  mkdir /openedx /openedx/data
 
 # Cloning  your custom app to the working directory ##
-RUN git clone -b murat https://github.com/murat-polat/frontend-app-account/ /openedx/account
+RUN git clone -b murat https://github.com/NTNUbeta/frontend-app-account/ /openedx/account
 
 WORKDIR /openedx/account/
 

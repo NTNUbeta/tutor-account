@@ -6,7 +6,7 @@ Installation
 
 ::
 
-    pip install git+https://github.com/myusername/tutor-account
+    pip install git+https://github.com/NTNUbeta/tutor-account
 
 Usage
 -----
