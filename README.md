@@ -40,3 +40,17 @@ visit http://yourdomain.com:1997
 
 ![](src/account.png)
 
+
+### Features and functionality
+
+To change account informations such as Username, Full Name, Email, Password reset, Birthday, Country.
+
+To change Profile informations: Education, Gender, Spoken Languages
+
+Add or change social media links: LinkedIn, Facebook, Twitter
+
+Site Prefences: to change Site language, Time zone
+
+Linked Accounts: to link your other accounts
+
+Delete Account

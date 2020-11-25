@@ -1,4 +1,4 @@
-account plugin for `Tutor <https://docs.tutor.overhang.io>`__
+
 ===================================================================================
 
 Installation
